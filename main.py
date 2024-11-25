@@ -15,3 +15,9 @@ def verification_weight():
       
         location = random.sample(range(8), 3)
 
+
+def find():
+    a = int(input('Enter fisrt location of the box in km: '))
+    b = int(input('Enter fisrt location of the box in km: '))
+    c = int(input('Enter fisrt location of the box in km: '))
+
