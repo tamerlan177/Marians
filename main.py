@@ -21,3 +21,10 @@ def find():
     b = int(input('Enter fisrt location of the box in km: '))
     c = int(input('Enter fisrt location of the box in km: '))
 
+    global location
+    if [a,b,c] != location:
+        print('Cargo is not discovered')
+        location = random.sample(range(8), 3)
+        find()
+    else:
+        verification_weight()
