@@ -12,7 +12,7 @@ def verification_weight():
         print('You found cargo')
     else:
         print("It does not have needed weight")
-        location = random.sample(range(6), 3)
+        location = random.sample(range(8), 3)
         find()
 
 
@@ -24,7 +24,8 @@ def find():
     global location
     if [a,b,c] != location:
         print('Cargo is not discovered')
-        location = random.sample(range(6), 3)
+        location = random.sample(range(8), 3)
         find()
     else:
         verification_weight()
+find()
