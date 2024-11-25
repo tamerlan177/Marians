@@ -12,8 +12,8 @@ def verification_weight():
         print('You found cargo')
     else:
         print("It does not have needed weight")
-      
         location = random.sample(range(8), 3)
+        find()
 
 
 def find():
